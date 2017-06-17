@@ -19,6 +19,8 @@
                 require: 'ngModel',
                 link: function(scope, element, attrs, ngModel) {
 
+                    var element = $(element[0])
+
                     // Expose scope var with loaded state of Redactor
                     scope.redactorLoaded = false;
 
